@@ -4,7 +4,7 @@
     --fuenteEncabezado: "PT Sans", sans-serif;
     --fuenteParrafos: "Open Sans", sans-serif;
     --primario: #784d3c;
-    --blanco: #f0faff;
+    --blanco: #f4fafd;
     --negro: #0f1f2f;
 }
 
@@ -82,22 +82,38 @@ h4{
     margin-top: 5rem;
 }
 
-@media (min-width: 769px){
+.logo{
+    color: var(--blanco);
+}
+
+.logo__nombre{
+    font-weight: 400;
+}
+
+.logo__bold{
+    font-weight: 700;
+}
+
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+@media (min-width: 768px){
     .barra{
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .logo{
-        color: var(--blanco);
+    .navegacion{
+        display: flex;
+        gap: 2rem;
     }
 
-    .logo__nombre{
-        font-weight: 400;
-    }
-
-    .logo__bold{
-        font-weight: 700;
+    .header__texto{
+        margin-top: 10rem;
     }
 }
